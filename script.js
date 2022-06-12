@@ -21,10 +21,10 @@ if ((idade >=18) && (humano === true)){
 let aniversario = "Janeiro";
 
 if((aniversario === "Janeiro") || (aniversario === "Dezembro")){
-        console.log("É Capricorniano");
-    }else{
-        console.log("Não é Capricorniano");
-    }
+    console.log("É Capricorniano");
+}else{
+    console.log("Não é Capricorniano");
+}
 
 //4 - Criar uma condição que exiba uma mensagem no console se seu nome começar com a letra R
 const nome = "Renata"
