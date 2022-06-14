@@ -1,45 +1,44 @@
-//1 - Crie uma condição que exiba uma mensagem no console se a idade for maior que 18
-let maiorIdade = 24;
-
-if((maiorIdade >=18) ){
-    console.log("Tu tem mais de 18 anos.");
-}else{
-    console.log("Menor de idade");
+console.log("1 - Criar um loop que conte de 1 até 10 usando FOR")
+for(let cont = 1; cont <= 10; cont ++){
+    console.log(`Loop com FOR ${cont}`);
 }
 
-//2 - Crie uma condição que exiba uma mensagem no console se você for maior de idade E a condição humana seja true
-let idade = 24;
-let humano = true;
+console.log("2 - Criar um loop que conte de 10 até 1 usando WHILE")
+let num = 10;
 
-if ((idade >=18) && (humano === true)){
-    console.log("Tu é maior de idade e é humano");
-}else{
-    console.log("Tem menos de 18 e/ou não é humano");
+while(num >= 0){
+    console.log(`Loop com WHILE ${num}`);
+    num --;
 }
 
-//3 - Criar uma condição que exiba uma mensagem no console se você fizer aniversário em Janeiro OU Dezembro
-let aniversario = "Janeiro";
-
-if((aniversario === "Janeiro") || (aniversario === "Dezembro")){
-    console.log("É Capricorniano");
-}else{
-    console.log("Não é Capricorniano");
+console.log("3 - Criar um loop que conte todos os números ímpares de 1 até 100")
+for(let num3 = 1; num3 <= 100; num3 ++){
+    if(num3 % 2 !== 0){
+        console.log(`Loop com FOR ${num3}`);
+    }
 }
 
-//4 - Criar uma condição que exiba uma mensagem no console se seu nome começar com a letra R
-const nome = "Renata"
+let cont3 = 1;
 
-if (nome.charAt(0) === "R"){
-    console.log(`O nome ${nome} começa com a letra R.`);
-}else{
-    console.log(`O nome ${nome} não incia com a letra R.`);
+while(cont3 <= 100){
+    if(cont3 % 2!== 0){
+        console.log(`Loop com WHILE ${cont3}`);
+    }
+    cont3 ++;
 }
 
-//5 - Criar uma condição que exiba uma mensagem no console se seu sobrenome tenha mais de 6 letras OU seu nome começar com a letra E
-const sobrenome = "Feltrin";
+console.log("4- Criar um loop que conte todos os números pares de 0 a 100")
+for(let num4 = 0; num4 <= 100; num4 ++){
+    if(num4 % 2 === 0){
+        console.log(`Loop com FOR ${num4}`);
+    }
+}
 
-if ((sobrenome.length >= 6) || sobrenome.charAt(0) === "E"){
-    console.log(`Seu sobrenome ${sobrenome} tem seis ou mais letras OU inicia com a letra E.`);
-}else{
-    console.log(`Seu sobrenome ${sobrenome} tem menos de cinco letras e/ou não incia com a letra E.`);
+let cont4 = 0;
+
+while(cont4 <= 100){
+    if(cont4 % 2 === 0){
+        console.log(`Loop com WHILE ${cont4}`);
+    }
+    cont4 ++;
 }
